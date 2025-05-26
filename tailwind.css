@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --radius-5xl: 2.5rem;
+  --radius-6xl: 3rem;
+}
