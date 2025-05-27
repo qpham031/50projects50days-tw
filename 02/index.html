@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="script.js" defer></script>
+    <title>Progress Steps</title>
+  </head>
+  <body>
+    <main
+      class="isolate flex h-screen w-screen flex-col items-center justify-center bg-slate-50"
+    >
+      <section class="w-sm">
+        <div
+          class="relative mb-10 [--circle:--spacing(8)] [--thickness:--spacing(1)]"
+        >
+          <!-- Progress bar [back] -->
+          <div
+            class="absolute top-1/2 -z-1 h-[var(--thickness)] w-full -translate-y-1/2 bg-gray-200"
+          ></div>
+          <!-- Progress bar -->
+          <div
+            data-target="progress-bar"
+            class="absolute top-1/2 left-5 -z-1 h-[var(--thickness)] w-[calc((100%-var(--circle))*0/3)] -translate-y-1/2 bg-blue-400 duration-300"
+          ></div>
+          <!-- Step circles -->
+          <ol class="flex w-full justify-between">
+            <li
+              data-target="progress-step"
+              class="flex size-[var(--circle)] items-center justify-center rounded-full border-[length:var(--thickness)] border-blue-400 bg-white text-slate-400 duration-300"
+            >
+              1
+            </li>
+            <li
+              data-target="progress-step"
+              class="flex size-[var(--circle)] items-center justify-center rounded-full border-[length:var(--thickness)] border-gray-200 bg-white text-slate-400 duration-300"
+            >
+              2
+            </li>
+            <li
+              data-target="progress-step"
+              class="flex size-[var(--circle)] items-center justify-center rounded-full border-[length:var(--thickness)] border-gray-200 bg-white text-slate-400 duration-300"
+            >
+              3
+            </li>
+            <li
+              data-target="progress-step"
+              class="flex size-[var(--circle)] items-center justify-center rounded-full border-[length:var(--thickness)] border-gray-200 bg-white text-slate-400 duration-300"
+            >
+              4
+            </li>
+          </ol>
+        </div>
+        <!-- Action button group -->
+        <div class="flex justify-center gap-4">
+          <button
+            type="button"
+            data-action="prev"
+            class="cursor-pointer rounded-lg bg-blue-400 px-8 py-1.5 text-sm text-white hover:ring-2 hover:ring-blue-200 active:scale-95 active:bg-blue-500 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 disabled:ring-0 disabled:active:scale-none"
+            disabled
+          >
+            Prev
+          </button>
+          <button
+            type="button"
+            data-action="next"
+            class="cursor-pointer rounded-lg bg-blue-400 px-8 py-1.5 text-sm text-white hover:ring-2 hover:ring-blue-200 active:scale-95 active:bg-blue-500 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 disabled:ring-0 disabled:active:scale-none"
+          >
+            Next
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
