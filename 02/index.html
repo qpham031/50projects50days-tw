@@ -15,15 +15,15 @@
         <div
           class="relative mb-10 [--circle:--spacing(8)] [--thickness:--spacing(1)]"
         >
-          <!-- Progress bar [back] -->
-          <div
-            class="absolute top-1/2 -z-1 h-[var(--thickness)] w-full -translate-y-1/2 bg-gray-200"
-          ></div>
           <!-- Progress bar -->
           <div
-            data-target="progress-bar"
-            class="absolute top-1/2 left-5 -z-1 h-[var(--thickness)] w-[calc((100%-var(--circle))*0/3)] -translate-y-1/2 bg-blue-400 duration-300"
-          ></div>
+            class="absolute top-1/2 left-[calc(var(--circle)/2)] -z-1 h-[var(--thickness)] w-[calc(100%-var(--circle))] -translate-y-1/2 bg-gray-200"
+          >
+            <div
+              data-target="progress-bar"
+              class="h-full w-0 bg-blue-400 duration-300"
+            ></div>
+          </div>
           <!-- Step circles -->
           <ol class="flex w-full justify-between">
             <li
