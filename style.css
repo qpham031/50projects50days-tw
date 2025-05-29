@@ -207,6 +207,10 @@
   .flex {
     display: flex;
   }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
   .size-\[var\(--circle\)\] {
     width: var(--circle);
     height: var(--circle);
