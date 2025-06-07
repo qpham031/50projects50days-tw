@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="script.js" defer></script>
+    <title>Form Input Wave</title>
+  </head>
+  <body class="flex h-screen items-center justify-center bg-cyan-600">
+    <div class="w-80 rounded-md bg-cyan-800 px-8 py-4 text-white">
+      <h1 class="mt-4 text-center text-2xl font-semibold">Please Login</h1>
+      <form>
+        <div class="relative mt-8">
+          <input class="border-b py-2 focus:outline-none" type="text" name="email" id="email" />
+          <label class="absolute bottom-2 left-0" for="email"> <span class="">E</span><span class="">m</span><span class="">a</span><span class="">i</span><span class="">l</span> </label>
+        </div>
+        <div class="relative mt-8">
+          <input class="border-b py-2 focus:outline-none" type="password" name="password" id="password" />
+          <label class="absolute bottom-2 left-0" for="password"> <span class="">P</span><span class="">a</span><span class="">s</span><span class="">s</span><span class="">w</span><span class="">o</span><span class="">r</span><span class="">d</span> </label>
+        </div>
+        <button class="mt-8 w-full rounded-md bg-white py-2 text-black">Login</button>
+        <p class="mt-6 mb-2">Don't have a account? <a class="text-cyan-300" href="#">Register</a></p>
+      </form>
+    </div>
+  </body>
+</html>
